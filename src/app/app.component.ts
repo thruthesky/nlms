@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
   selector: `app-component`,
   template: `
     <router-outlet></router-outlet>
-    <template ngbModalContainer></template>
   `
 })
 export class AppComponent {
