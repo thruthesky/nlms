@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 
 
+import { MaterialModule } from '@angular/material';
 const appRoutes: Routes = [
   { path: 'help', component: HelpPage },
   { path: '', component: HomePage }
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot( appRoutes, { useHash: !history.pushState })
+    RouterModule.forRoot( appRoutes, { useHash: !history.pushState }),
+    MaterialModule.forRoot()
   ],
   bootstrap: [ AppComponent ]
 })

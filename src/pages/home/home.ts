@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-@Component( {
+@Component({
     selector: 'home-page',
     templateUrl: 'home.html'
 })
-export class HomePage {
-    constructor(  ) {
-        this.onClickModal();
-    }
-    onClickModal() {
-        
-    }
-}
+export class HomePage {}
